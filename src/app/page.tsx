@@ -2,102 +2,89 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen bg-bg text-text px-6 py-12 font-sans">
+      <header className="text-center space-y-4 mb-16">
+        <div className="inline-block animate-float">
+          <Image
+            src="/logo.png"
+            alt="Aiptimization logo"
+            width={200}
+            height={200}
+            className="mx-auto rounded-xl shadow-neon animate-pulse-slow"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+        <h1 className="text-6xl font-display tracking-widest text-accent drop-shadow-md">
+          Aiptimization
+        </h1>
+        <p className="text-lg text-accentDark italic font-medium">
+          Aiptimization... it will find you.
+        </p>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#get-started"
+          className="inline-block mt-6 px-6 py-3 bg-accent text-bg font-bold rounded-md shadow-neon hover:scale-105 transition-transform"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+          Get Started
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </header>
+
+      <section className="max-w-4xl mx-auto space-y-10">
+        <div className="bg-card border border-border p-6 rounded-lg shadow-deep">
+          <h2 className="text-3xl font-bold text-accent mb-3">What is Aiptimization?</h2>
+          <p className="leading-relaxed">
+            Aiptimization is the process of making your content, site, and digital presence AI-discoverable and contextually quotable in tools like ChatGPT, Claude, Perplexity, and more. It goes beyond traditional SEO and focuses on being visible in AI conversations.
+          </p>
+        </div>
+
+        <div className="bg-card border border-border p-6 rounded-lg shadow-deep">
+          <h2 className="text-3xl font-bold text-accent mb-3">Why It Matters</h2>
+          <ul className="space-y-3">
+            <li><strong>The Prompt Era:</strong> People are prompting, not Googling. Future traffic comes through AI recommendations.</li>
+            <li><strong>AI Readability:</strong> Your site needs to be AI-readable, not just SEO-ready. Structure matters more than keywords.</li>
+            <li><strong>Context is King:</strong> AI needs clean context, not keyword stuffing. Clear semantic structure wins.</li>
+          </ul>
+        </div>
+
+        <div className="bg-card border border-border p-6 rounded-lg shadow-deep">
+          <h2 className="text-3xl font-bold text-accent mb-4">The Core Pillars of Aiptimization</h2>
+          <ol className="list-decimal pl-6 space-y-2">
+            <li><strong>AI-Readable Content:</strong> Semantic clarity, structured text, bullet points.</li>
+            <li><strong>Smart Metadata:</strong> Schema, OpenGraph, JSON-LD, rich semantic tags.</li>
+            <li><strong>Agent Integration Readiness:</strong> Make content usable by personal AI agents.</li>
+            <li><strong>Proactive Context Engineering:</strong> Anticipate how AI interprets and quotes your content.</li>
+            <li><strong>Decentralized Visibility:</strong> Optimize for ChatGPT, Claude, Perplexity—not just Google.</li>
+          </ol>
+        </div>
+
+        <div id="get-started" className="bg-card border border-border p-6 rounded-lg shadow-neon">
+          <h2 className="text-3xl font-bold text-accent mb-2">Join the Movement</h2>
+          <p className="mb-4 text-sm">Be part of the AIP revolution. Get updates, tools, and resources.</p>
+          <form className="flex flex-col sm:flex-row gap-4">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="flex-1 px-4 py-2 rounded-md text-black"
+              required
+            />
+            <button
+              type="submit"
+              className="px-6 py-2 bg-accent text-bg font-semibold rounded-md hover:opacity-90 transition"
+            >
+              Sign Up
+            </button>
+          </form>
+        </div>
+
+        <footer className="text-center text-sm text-zinc-500 pt-12">
+          <p>© 2025 Aiptimization.com | Coined by Aycher & Cypher</p>
+          <a
+            href="https://github.com/aycher2000/aiptimization"
+            target="_blank"
+            className="underline hover:text-accent"
+          >
+            GitHub Repo
+          </a>
+        </footer>
+      </section>
+    </main>
   );
 }
